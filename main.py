@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = 8963474738:AAGGKRqBQ1qHB1d-qiJUHlsFk5TnUDfR8Vs
 print("TOKEN:", repr(TOKEN))
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
