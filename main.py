@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
+print("TOKEN:", repr(TOKEN))
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_photo(
